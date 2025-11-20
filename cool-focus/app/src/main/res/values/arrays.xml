@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="reminder_frequency_entries">
+        <item>单次提醒</item>
+        <item>连续提醒</item>
+        <item>持续提醒直到休息</item>
+    </string-array>
+
+    <string-array name="reminder_frequency_values">
+        <item>single</item>
+        <item>multiple</item>
+        <item>continuous</item>
+    </string-array>
+
+    <string-array name="notification_mode_entries">
+        <item>静音</item>
+        <item>仅震动</item>
+        <item>仅铃声</item>
+        <item>铃声+震动</item>
+    </string-array>
+
+    <string-array name="notification_mode_values">
+        <item>silent</item>
+        <item>vibration_only</item>
+        <item>sound_only</item>
+        <item>sound_and_vibration</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="primary_blue">#4A90E2</color>
+    <color name="primary_purple">#8E44AD</color>
+    <color name="primary_dark_blue">#357ABD</color>
+    <color name="primary_dark_purple">#7D3C98</color>
+    
+    <!-- Secondary colors -->
+    <color name="secondary_light_blue">#AED6F1</color>
+    <color name="secondary_light_purple">#D7BDE2</color>
+    <color name="accent_blue">#5DADE2</color>
+    <color name="accent_purple">#BB8FCE</color>
+    
+    <!-- Neutral colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="off_white">#FAFAFA</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="dark_gray">#757575</color>
+    <color name="black">#000000</color>
+    
+    <!-- Background colors -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_dark">#F0F0F0</color>
+    <color name="card_background">#FFFFFF</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+    
+    <!-- Progress colors -->
+    <color name="progress_primary">#4A90E2</color>
+    <color name="progress_secondary">#8E44AD</color>
+    <color name="progress_background">#E3F2FD</color>
+    <color name="progress_warning">#FF9800</color>
+    <color name="progress_danger">#F44336</color>
+    
+    <!-- Status colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+    
+    <!-- Chart colors -->
+    <color name="chart_blue">#4A90E2</color>
+    <color name="chart_purple">#8E44AD</color>
+    <color name="chart_green">#52BE80</color>
+    <color name="chart_orange">#F39C12</color>
+    <color name="chart_red">#E74C3C</color>
+    
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+    
+</resources>

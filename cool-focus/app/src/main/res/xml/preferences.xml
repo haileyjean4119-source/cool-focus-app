@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/reminder_settings"
+        android:key="reminder_category">
+
+        <SeekBarPreference
+            android:key="reminder_threshold"
+            android:title="@string/reminder_threshold"
+            android:summary="@string/reminder_threshold_summary"
+            android:defaultValue="30"
+            android:max="180"
+            android:min="1"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="false" />
+
+        <SeekBarPreference
+            android:key="effective_break_time"
+            android:title="@string/effective_break_time"
+            android:summary="@string/effective_break_time_summary"
+            android:defaultValue="5"
+            android:max="30"
+            android:min="1"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="false" />
+
+        <ListPreference
+            android:key="reminder_frequency"
+            android:title="@string/reminder_frequency"
+            android:summary="@string/reminder_frequency_summary"
+            android:entries="@array/reminder_frequency_entries"
+            android:entryValues="@array/reminder_frequency_values"
+            android:defaultValue="single" />
+
+        <SeekBarPreference
+            android:key="reminder_interval"
+            android:title="提醒间隔"
+            android:summary="连续提醒的时间间隔（秒）"
+            android:defaultValue="30"
+            android:max="300"
+            android:min="10"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="false" />
+
+        <SeekBarPreference
+            android:key="reminder_repeat_count"
+            android:title="重复次数"
+            android:summary="连续提醒的最大次数"
+            android:defaultValue="3"
+            android:max="10"
+            android:min="1"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/notification_settings"
+        android:key="notification_category">
+
+        <ListPreference
+            android:key="notification_mode"
+            android:title="@string/notification_mode"
+            android:summary="@string/notification_mode_summary"
+            android:entries="@array/notification_mode_entries"
+            android:entryValues="@array/notification_mode_values"
+            android:defaultValue="sound_and_vibration" />
+
+        <SwitchPreferenceCompat
+            android:key="notification_sound"
+            android:title="@string/notification_sound"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="notification_vibration"
+            android:title="@string/notification_vibration"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/daily_goal_setting"
+        android:key="goal_category">
+
+        <SeekBarPreference
+            android:key="daily_goal"
+            android:title="@string/daily_goal_setting"
+            android:summary="@string/daily_goal_summary"
+            android:defaultValue="240"
+            android:max="720"
+            android:min="30"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="false" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

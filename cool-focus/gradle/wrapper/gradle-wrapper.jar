@@ -1,0 +1,2 @@
+# This would normally be a binary JAR file, but for this demo we'll create a placeholder
+# In a real project, this would be downloaded automatically by Gradle

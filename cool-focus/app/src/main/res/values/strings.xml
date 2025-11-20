@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">冷静 Cool Focus</string>
+    
+    <!-- Main Activity -->
+    <string name="current_usage">本次连续使用时长</string>
+    <string name="today_total">今日总时长</string>
+    <string name="goal_progress">目标进度</string>
+    <string name="start_monitoring">开始监控</string>
+    <string name="stop_monitoring">停止监控</string>
+    
+    <!-- Statistics -->
+    <string name="statistics_title">使用统计</string>
+    <string name="today_view">今日</string>
+    <string name="week_view">本周</string>
+    <string name="total_usage_time">总使用时长</string>
+    <string name="break_count">休息次数</string>
+    <string name="ignore_count">忽略提醒次数</string>
+    <string name="max_continuous_usage">最高连续使用时长</string>
+    <string name="daily_goal">每日目标</string>
+    <string name="goal_achieved">目标达成</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="reminder_settings">提醒设置</string>
+    <string name="reminder_threshold">提醒阈值</string>
+    <string name="reminder_threshold_summary">当连续使用达到此时间时提醒</string>
+    <string name="effective_break_time">有效休息时长</string>
+    <string name="effective_break_time_summary">锁屏超过此时间视为有效休息</string>
+    <string name="reminder_frequency">提醒频率</string>
+    <string name="reminder_frequency_summary">提醒弹出的频率模式</string>
+    <string name="notification_settings">通知设置</string>
+    <string name="notification_sound">提示音</string>
+    <string name="notification_vibration">震动</string>
+    <string name="notification_mode">通知模式</string>
+    <string name="notification_mode_summary">选择提醒方式</string>
+    <string name="daily_goal_setting">每日目标</string>
+    <string name="daily_goal_summary">设置每日最大使用时长目标</string>
+    
+    <!-- Reminder Messages -->
+    <string name="reminder_title">使用提醒</string>
+    <string name="reminder_message">您已连续使用手机%1$s，该休息一下了！</string>
+    <string name="reminder_notification_title">冷静提醒</string>
+    <string name="reminder_notification_content">您已连续使用%1$s，建议休息一下</string>
+    <string name="notification_channel_name">使用提醒</string>
+    <string name="notification_channel_description">手机使用时长的提醒通知</string>
+    
+    <!-- Permission Guide -->
+    <string name="permission_guide_title">权限设置指南</string>
+    <string name="permission_accessibility">无障碍服务</string>
+    <string name="permission_accessibility_desc">用于精确监控应用使用情况</string>
+    <string name="permission_battery">电池优化</string>
+    <string name="permission_battery_desc">防止系统杀后台，确保监控持续运行</string>
+    <string name="permission_autostart">自启动设置</string>
+    <string name="permission_autostart_desc">确保应用开机自启动</string>
+    <string name="permission_overlay">悬浮窗权限</string>
+    <string name="permission_overlay_desc">用于显示提醒弹窗</string>
+    
+    <!-- Actions -->
+    <string name="action_ok">确定</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_settings">设置</string>
+    <string name="action_take_break">休息一下</string>
+    <string name="action_continue">继续使用</string>
+    
+    <!-- Time formats -->
+    <string name="time_format_minutes">%1$d分钟</string>
+    <string name="time_format_seconds">%1$d秒</string>
+    <string name="time_format_min_sec">%1$d分%2$d秒</string>
+    <string name="time_format_hour_min">%1$d小时%2$d分钟</string>
+    
+    <!-- Status -->
+    <string name="status_monitoring">正在监控</string>
+    <string name="status_not_monitoring">未监控</string>
+    <string name="status_service_running">服务运行中</string>
+    <string name="status_service_stopped">服务已停止</string>
+    
+    <!-- Error messages -->
+    <string name="error_permission_denied">权限被拒绝，无法正常运行</string>
+    <string name="error_service_start_failed">服务启动失败</string>
+    <string name="error_settings_save_failed">设置保存失败</string>
+    
+    <!-- Success messages -->
+    <string name="settings_saved">设置已保存</string>
+    <string name="service_started">监控服务已启动</string>
+    <string name="service_stopped">监控服务已停止</string>
+    
+</resources>
