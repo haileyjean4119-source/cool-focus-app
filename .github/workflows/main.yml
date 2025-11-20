@@ -9,10 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Check current directory
-      run: ls -la
-    - name: Check cool-focus directory
-      run: ls -la cool-focus/
     - name: set up JDK
       uses: actions/setup-java@v4
       with:
@@ -23,8 +19,12 @@ jobs:
         cd cool-focus
         chmod +x ./gradlew
         ./gradlew assembleDebug
+    - name: Find APK file
+      run: |
+        cd cool-focus
+        find . -name "*.apk" -type f
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
-        path: cool-focus/app/build/outputs/apk/debug/app-debug.apk
+        path: cool-focus/app/build/outputs/apk/debug/*.apk
