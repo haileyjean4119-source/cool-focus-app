@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Check current directory
+      run: ls -la
+    - name: Check cool-focus directory
+      run: ls -la cool-focus/
     - name: set up JDK
       uses: actions/setup-java@v4
       with:
@@ -16,10 +20,11 @@ jobs:
         distribution: 'temurin'
     - name: Build APK
       run: |
+        cd cool-focus
         chmod +x ./gradlew
         ./gradlew assembleDebug
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: cool-focus/app/build/outputs/apk/debug/app-debug.apk
