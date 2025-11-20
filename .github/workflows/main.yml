@@ -14,17 +14,17 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-    - name: Build APK
+    - name: Check project structure
+      run: |
+        echo "=== Project Structure ==="
+        cd cool-focus
+        ls -la
+        echo "=== App Directory ==="
+        ls -la app/ || echo "No app directory"
+        echo "=== Gradle Files ==="
+        ls -la *.gradle || echo "No gradle files"
+    - name: Build APK with detailed output
       run: |
         cd cool-focus
         chmod +x ./gradlew
-        ./gradlew assembleDebug
-    - name: Find APK file
-      run: |
-        cd cool-focus
-        find . -name "*.apk" -type f
-    - name: Upload APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: app-debug
-        path: cool-focus/app/build/outputs/apk/debug/*.apk
+        ./gradlew assembleDebug --info --stacktrace
